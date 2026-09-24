@@ -7,7 +7,7 @@ Vector SVGs of the iPhone Duo symbols that ship with SF Symbols in macOS 27.2. A
 | Symbol | File | Source |
 | --- | --- | --- |
 | <img src="iphone-duo-folded.svg" height="32"> | `iphone-duo-folded.svg` | Apple, `BA5F95BD205B47E982C16A26E541251A` |
-| <img src="iphone-duo-half-open.svg" height="32"> | `iphone-duo-half-open.svg` | **Custom, made by [@fedebitrig](https://github.com/fedebitrig)** (see below) |
+| <img src="iphone-duo-half-open.svg" height="32"> | `iphone-duo-half-open.svg` | **Custom, made by [@fedesanchez0](https://github.com/fedesanchez0)** (see below) |
 | <img src="iphone-duo-unfolded.svg" height="32"> | `iphone-duo-unfolded.svg` | Apple, `123E64BDCACB4C389C204E2EC290D2A6` |
 | <img src="iphone-duo-lock.svg" height="32"> | `iphone-duo-lock.svg` | Apple, `2F45143C03184F9D85936BB967922E8F` |
 | <img src="iphone-duo-lock-open.svg" height="32"> | `iphone-duo-lock-open.svg` | Apple, `DB832091731249CDAB30C05B7DE8E354` |
