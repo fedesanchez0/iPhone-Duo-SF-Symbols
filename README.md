@@ -4,6 +4,11 @@
 
 Vector SVGs of the iPhone Duo symbols that ship with SF Symbols in macOS 27.2. Apple leaves these symbols unnamed. They appear only as UUIDs, so each file here has a descriptive name.
 
+The repo has two kinds of file:
+
+- **[`templates/`](templates):** full SF Symbols templates, with all 9 weights (Ultralight to Black) in all 3 scales (Small, Medium, Large). Use these in Xcode or the SF Symbols app.
+- **The root SVGs:** one plain SVG per symbol, in Regular weight. Use these on the web or in design tools.
+
 | Symbol | File | Source |
 | --- | --- | --- |
 | <img src="iphone-duo-folded.svg" height="32"> | `iphone-duo-folded.svg` | Apple, `BA5F95BD205B47E982C16A26E541251A` |
@@ -17,9 +22,23 @@ Vector SVGs of the iPhone Duo symbols that ship with SF Symbols in macOS 27.2. A
 
 Apple doesn't ship a half-open, folding version of the iPhone Duo symbol. I drew `iphone-duo-half-open.svg` myself, starting from Apple's folded glyph (`BA5F95BD…`), so it matches the other symbols in weight and style.
 
-## Usage
+## SF Symbols templates
 
-Each file is a single `<path>` filled with `currentColor`, so the symbol takes on the text color around it:
+Each file in [`templates/`](templates) is a standard SF Symbols template, with 27 variants plus baseline, cap-height and margin guides. You can use one in two ways:
+
+- **In Xcode:** drag the SVG into an asset catalog. It becomes a symbol image set you can load with `Image("iphone-duo-folded")` in SwiftUI or `UIImage(named:)` in UIKit. It follows Dynamic Type, font weight and `.imageScale` like a built-in symbol.
+- **In the SF Symbols app:** choose File › Import Symbol… to add it to your custom symbols, where you can edit or re-export it.
+
+The five Apple templates come straight from the glyphs in macOS 27.2, rendered at every weight and scale. Their size, margins and baseline match Apple's to within 0.001 pt. They keep Apple's layer structure for monochrome, hierarchical, palette and multicolor rendering. For example, on the lock symbols the padlock is the primary layer and the phone outline is the secondary layer.
+
+There are two limitations:
+
+- **No translucent screen fill.** In hierarchical mode, Apple's folded, unfolded and waves symbols tint the phone's screen. In monochrome, Apple hides that fill using an opacity setting that custom symbol templates can't express. Keeping the fill would turn the screen solid black in monochrome, so the templates leave it out. Every other part of each symbol is unchanged.
+- **The half-open template has one weight.** The custom half-open symbol only exists in one weight. Its template reuses that drawing for all 9 weights and scales it for Small and Large, so it won't get thinner or bolder with the font weight.
+
+## Usage on the web
+
+Each root SVG is a single `<path>` filled with `currentColor`, so the symbol takes on the text color around it:
 
 ```html
 <img src="iphone-duo-folded.svg" alt="iPhone Duo" height="24">
