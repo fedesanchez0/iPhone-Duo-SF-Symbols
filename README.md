@@ -1,5 +1,7 @@
 # iPhone Duo SF Symbols
 
+<a href="https://bitrig.link/iphone-duo-sf-symbols-gh"><img src="Documentation/Images/Badges/made-with-bitrig.svg" alt="Made with Bitrig" height="56"></a><a href="https://fsanchez.io"><img src="Documentation/Images/Badges/designed-by.svg" alt="Designed by Fede Sánchez" height="56"></a><a href="https://claude.com/claude-code"><img src="Documentation/Images/Badges/claude-code.svg" alt="In collaboration with Claude Code" height="56"></a>
+
 <p align="center"><img src="preview.svg" alt="The six iPhone Duo symbols: folded, half open, unfolded, locked, unlocked and waves" width="100%"></p>
 
 Vector SVGs of the iPhone Duo symbols that ship with SF Symbols in macOS 27.2. Apple leaves these symbols unnamed. They appear only as UUIDs, so each file here has a descriptive name.
